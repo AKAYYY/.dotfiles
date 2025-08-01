@@ -3,3 +3,7 @@ if status is-interactive
 end
 
 set -g fish_greeting
+if type -q eza
+    alias ls "eza -l -g --icons"
+    alias lsa "ls -a"
+end
